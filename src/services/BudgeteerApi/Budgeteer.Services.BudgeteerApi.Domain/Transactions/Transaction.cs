@@ -16,6 +16,9 @@ public class Transaction : Entity
     public IReadOnlyCollection<Document> EnclosedDocuments => _enclosedDocuments
         .AsReadOnly();
 
+    public IReadOnlyCollection<Tag> Tags => _tags
+        .AsReadOnly();
+
     public Transaction(
         string name,
         decimal amount,
