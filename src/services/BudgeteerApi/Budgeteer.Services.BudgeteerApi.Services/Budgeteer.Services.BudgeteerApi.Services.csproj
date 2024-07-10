@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Budgeteer.Services.BudgeteerApi.Domain\Budgeteer.Services.BudgeteerApi.Domain.csproj" />
+    <ProjectReference Include="..\Budgeteer.Services.BudgeteerApi.Infrastructure\Budgeteer.Services.BudgeteerApi.Infrastructure.csproj" />
+    <ProjectReference Include="..\Budgeteer.Services.BudgeteerApi.Persistence\Budgeteer.Services.BudgeteerApi.Persistence.csproj" />
+  </ItemGroup>
+
+</Project>

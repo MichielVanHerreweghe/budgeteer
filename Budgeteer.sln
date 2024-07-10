@@ -19,7 +19,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BudgeteerApi", "BudgeteerAp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Budgeteer.Services.BudgeteerApi.Domain.Tests", "tests\services\BudgeteerApi\Budgeteer.Services.BudgeteerApi.Domain.Tests\Budgeteer.Services.BudgeteerApi.Domain.Tests.csproj", "{61032EDD-F43B-497A-B7F1-93A8EBF3D0E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Budgeteer.Services.BudgeteerApi.Persistence", "src\services\BudgeteerApi\Budgeteer.Services.BudgeteerApi.Persistence\Budgeteer.Services.BudgeteerApi.Persistence.csproj", "{8E7D928D-80EA-4C12-B93D-16EDF86E2AFA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Budgeteer.Services.BudgeteerApi.Persistence", "src\services\BudgeteerApi\Budgeteer.Services.BudgeteerApi.Persistence\Budgeteer.Services.BudgeteerApi.Persistence.csproj", "{8E7D928D-80EA-4C12-B93D-16EDF86E2AFA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Budgeteer.Services.BudgeteerApi.Services", "src\services\BudgeteerApi\Budgeteer.Services.BudgeteerApi.Services\Budgeteer.Services.BudgeteerApi.Services.csproj", "{0D31EB03-6643-45C5-9F9F-3CDFE3F0A2AB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Budgeteer.Services.BudgeteerApi.Infrastructure", "src\services\BudgeteerApi\Budgeteer.Services.BudgeteerApi.Infrastructure\Budgeteer.Services.BudgeteerApi.Infrastructure.csproj", "{8AA69CA3-20AA-4E5A-ABBA-C239F3877026}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{8E7D928D-80EA-4C12-B93D-16EDF86E2AFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E7D928D-80EA-4C12-B93D-16EDF86E2AFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E7D928D-80EA-4C12-B93D-16EDF86E2AFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D31EB03-6643-45C5-9F9F-3CDFE3F0A2AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D31EB03-6643-45C5-9F9F-3CDFE3F0A2AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D31EB03-6643-45C5-9F9F-3CDFE3F0A2AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D31EB03-6643-45C5-9F9F-3CDFE3F0A2AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AA69CA3-20AA-4E5A-ABBA-C239F3877026}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AA69CA3-20AA-4E5A-ABBA-C239F3877026}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AA69CA3-20AA-4E5A-ABBA-C239F3877026}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AA69CA3-20AA-4E5A-ABBA-C239F3877026}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,6 +63,8 @@ Global
 		{28B431C5-EBB8-4AB9-AC87-8ED528B94216} = {B2FBE4B3-EF8B-421F-90E4-D86D63CEABC9}
 		{61032EDD-F43B-497A-B7F1-93A8EBF3D0E8} = {28B431C5-EBB8-4AB9-AC87-8ED528B94216}
 		{8E7D928D-80EA-4C12-B93D-16EDF86E2AFA} = {6026433F-BB56-453D-9934-0D04D46546A0}
+		{0D31EB03-6643-45C5-9F9F-3CDFE3F0A2AB} = {6026433F-BB56-453D-9934-0D04D46546A0}
+		{8AA69CA3-20AA-4E5A-ABBA-C239F3877026} = {6026433F-BB56-453D-9934-0D04D46546A0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {00AF08D5-15CF-4B9B-B7A1-65F9EDC95B4D}
