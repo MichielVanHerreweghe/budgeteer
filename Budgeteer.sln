@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "services", "services", "{6C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BudgeteerApi", "BudgeteerApi", "{6026433F-BB56-453D-9934-0D04D46546A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Budgeteer.Services.BudgeteerApi.Domain", "src\services\BudgeteerApi\Budgeteer.Services.BudgeteerApi.Domain\Budgeteer.Services.BudgeteerApi.Domain.csproj", "{D6773576-2D8C-4396-B19F-D2DA43921FBD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Budgeteer.Services.BudgeteerApi.Domain", "src\services\BudgeteerApi\Budgeteer.Services.BudgeteerApi.Domain\Budgeteer.Services.BudgeteerApi.Domain.csproj", "{D6773576-2D8C-4396-B19F-D2DA43921FBD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{13A0412E-3839-413B-9C19-4E39EE81A1D9}"
 EndProject
@@ -17,7 +17,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "services", "services", "{B2
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BudgeteerApi", "BudgeteerApi", "{28B431C5-EBB8-4AB9-AC87-8ED528B94216}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Budgeteer.Services.BudgeteerApi.Domain.Tests", "tests\services\BudgeteerApi\Budgeteer.Services.BudgeteerApi.Domain.Tests\Budgeteer.Services.BudgeteerApi.Domain.Tests.csproj", "{61032EDD-F43B-497A-B7F1-93A8EBF3D0E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Budgeteer.Services.BudgeteerApi.Domain.Tests", "tests\services\BudgeteerApi\Budgeteer.Services.BudgeteerApi.Domain.Tests\Budgeteer.Services.BudgeteerApi.Domain.Tests.csproj", "{61032EDD-F43B-497A-B7F1-93A8EBF3D0E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Budgeteer.Services.BudgeteerApi.Persistence", "src\services\BudgeteerApi\Budgeteer.Services.BudgeteerApi.Persistence\Budgeteer.Services.BudgeteerApi.Persistence.csproj", "{8E7D928D-80EA-4C12-B93D-16EDF86E2AFA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{61032EDD-F43B-497A-B7F1-93A8EBF3D0E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61032EDD-F43B-497A-B7F1-93A8EBF3D0E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61032EDD-F43B-497A-B7F1-93A8EBF3D0E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E7D928D-80EA-4C12-B93D-16EDF86E2AFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E7D928D-80EA-4C12-B93D-16EDF86E2AFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E7D928D-80EA-4C12-B93D-16EDF86E2AFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E7D928D-80EA-4C12-B93D-16EDF86E2AFA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,6 +50,7 @@ Global
 		{B2FBE4B3-EF8B-421F-90E4-D86D63CEABC9} = {13A0412E-3839-413B-9C19-4E39EE81A1D9}
 		{28B431C5-EBB8-4AB9-AC87-8ED528B94216} = {B2FBE4B3-EF8B-421F-90E4-D86D63CEABC9}
 		{61032EDD-F43B-497A-B7F1-93A8EBF3D0E8} = {28B431C5-EBB8-4AB9-AC87-8ED528B94216}
+		{8E7D928D-80EA-4C12-B93D-16EDF86E2AFA} = {6026433F-BB56-453D-9934-0D04D46546A0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {00AF08D5-15CF-4B9B-B7A1-65F9EDC95B4D}
