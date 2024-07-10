@@ -18,6 +18,9 @@ internal class TransactionConfiguration : EntityConfiguration<Transaction>
             .HasDiscriminator<TransactionType>(
                 nameof(TransactionType)
             )
+            .HasValue<Transaction>(
+                TransactionType.Transaction
+            )
             .HasValue<Revenue>(
                 TransactionType.Revenue
             )

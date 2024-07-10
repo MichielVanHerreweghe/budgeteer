@@ -25,6 +25,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Budgeteer.Services.Budgetee
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Budgeteer.Services.BudgeteerApi.Infrastructure", "src\services\BudgeteerApi\Budgeteer.Services.BudgeteerApi.Infrastructure\Budgeteer.Services.BudgeteerApi.Infrastructure.csproj", "{8AA69CA3-20AA-4E5A-ABBA-C239F3877026}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Budgeteer.Services.BudgeteerApi.Shared", "src\services\BudgeteerApi\Budgeteer.Services.BudgeteerApi.Shared\Budgeteer.Services.BudgeteerApi.Shared.csproj", "{3E74E7A3-F555-4C59-AB30-DDC00CAC5AC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Budgeteer.Services.BudgeteerApi.Api", "src\services\BudgeteerApi\Budgeteer.Services.BudgeteerApi.Api\Budgeteer.Services.BudgeteerApi.Api.csproj", "{E0462B27-9B79-4652-AD79-14D94D25CC9E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,14 @@ Global
 		{8AA69CA3-20AA-4E5A-ABBA-C239F3877026}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8AA69CA3-20AA-4E5A-ABBA-C239F3877026}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8AA69CA3-20AA-4E5A-ABBA-C239F3877026}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E74E7A3-F555-4C59-AB30-DDC00CAC5AC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E74E7A3-F555-4C59-AB30-DDC00CAC5AC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E74E7A3-F555-4C59-AB30-DDC00CAC5AC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E74E7A3-F555-4C59-AB30-DDC00CAC5AC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0462B27-9B79-4652-AD79-14D94D25CC9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0462B27-9B79-4652-AD79-14D94D25CC9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0462B27-9B79-4652-AD79-14D94D25CC9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0462B27-9B79-4652-AD79-14D94D25CC9E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -65,6 +77,8 @@ Global
 		{8E7D928D-80EA-4C12-B93D-16EDF86E2AFA} = {6026433F-BB56-453D-9934-0D04D46546A0}
 		{0D31EB03-6643-45C5-9F9F-3CDFE3F0A2AB} = {6026433F-BB56-453D-9934-0D04D46546A0}
 		{8AA69CA3-20AA-4E5A-ABBA-C239F3877026} = {6026433F-BB56-453D-9934-0D04D46546A0}
+		{3E74E7A3-F555-4C59-AB30-DDC00CAC5AC7} = {6026433F-BB56-453D-9934-0D04D46546A0}
+		{E0462B27-9B79-4652-AD79-14D94D25CC9E} = {6026433F-BB56-453D-9934-0D04D46546A0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {00AF08D5-15CF-4B9B-B7A1-65F9EDC95B4D}
