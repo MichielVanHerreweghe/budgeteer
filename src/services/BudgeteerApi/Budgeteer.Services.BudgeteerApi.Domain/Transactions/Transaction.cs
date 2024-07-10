@@ -50,6 +50,16 @@ public class Transaction : Entity
         _tags = new();
     }
 
+    public void AddEnclosedDocument(
+        Document document
+    )
+    {
+        _enclosedDocuments
+            .Add(
+                document
+            );
+    }
+
     public void Update(
         string name,
         decimal amount,

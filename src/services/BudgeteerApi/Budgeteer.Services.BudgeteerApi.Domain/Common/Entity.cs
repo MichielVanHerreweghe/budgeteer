@@ -72,4 +72,9 @@ public abstract class Entity
     {
         return $"{GetType().Name} - {Id}";
     }
+
+    public void Delete()
+    {
+        IsEnabled = false;
+    }
 }
