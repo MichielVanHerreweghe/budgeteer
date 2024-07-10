@@ -7,7 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Mappers\" />
+    <ProjectReference Include="..\Budgeteer.Services.BudgeteerApi.Domain\Budgeteer.Services.BudgeteerApi.Domain.csproj" />
+    <ProjectReference Include="..\Budgeteer.Services.BudgeteerApi.Shared\Budgeteer.Services.BudgeteerApi.Shared.csproj" />
   </ItemGroup>
 
 </Project>

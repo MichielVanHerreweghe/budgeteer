@@ -23,7 +23,7 @@ public class DocumentService : IDocumentService
     )
     {
         Document document = await GetByIdAsync(
-            model.Id,
+            id,
             cancellationToken
         );
 

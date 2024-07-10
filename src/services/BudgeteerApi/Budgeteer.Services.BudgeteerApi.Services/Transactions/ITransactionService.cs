@@ -16,7 +16,7 @@ public interface ITransactionService
         CancellationToken cancellationToken
     );
 
-    Task CreateEnclosedDocument(
+    Task<int> CreateEnclosedDocumentAsync(
         int id,
         Document document,
         CancellationToken cancellationToken

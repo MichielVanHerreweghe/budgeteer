@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>d29fa301-bae6-49d0-b69e-30b5077f21a7</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.7">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.7" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Budgeteer.Services.BudgeteerApi.Persistence\Budgeteer.Services.BudgeteerApi.Persistence.csproj" />
+    <ProjectReference Include="..\Budgeteer.Services.BudgeteerApi.Services\Budgeteer.Services.BudgeteerApi.Services.csproj" />
+    <ProjectReference Include="..\Budgeteer.Services.BudgeteerApi.Shared\Budgeteer.Services.BudgeteerApi.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

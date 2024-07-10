@@ -60,7 +60,7 @@ public class TransactionService : ITransactionService
             );
     }
 
-    public async Task CreateEnclosedDocument(
+    public async Task<int> CreateEnclosedDocumentAsync(
         int id,
         Document document,
         CancellationToken cancellationToken
@@ -75,6 +75,13 @@ public class TransactionService : ITransactionService
             .AddEnclosedDocument(
                 document
             );
+
+        await _dbContext
+            .SaveChangesAsync(
+                cancellationToken
+            );
+
+        return transaction.Id;
     }
 
     private async Task<Transaction> GetByIdAsync(
