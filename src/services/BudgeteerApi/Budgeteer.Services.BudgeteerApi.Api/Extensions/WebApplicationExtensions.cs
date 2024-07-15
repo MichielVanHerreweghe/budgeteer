@@ -1,4 +1,5 @@
-﻿using Budgeteer.Services.BudgeteerApi.Persistence;
+﻿using Budgeteer.Services.BudgeteerApi.Infrastructure.Options;
+using Budgeteer.Services.BudgeteerApi.Persistence;
 using Microsoft.EntityFrameworkCore;
 
 namespace Budgeteer.Services.BudgeteerApi.Api.Extensions;
@@ -6,7 +7,8 @@ namespace Budgeteer.Services.BudgeteerApi.Api.Extensions;
 public static class WebApplicationExtensions
 {
     public static WebApplication AddApplicationMiddleware(
-        this WebApplication app    
+        this WebApplication app,
+        IConfiguration configuration
     )
     {
         if (app.Environment.IsDevelopment())
@@ -21,6 +23,11 @@ public static class WebApplicationExtensions
 
         app
             .MapControllers();
+
+        app
+            .AddHealthCheckMiddleware(
+                configuration
+            );
 
         return app;
     }
@@ -46,6 +53,23 @@ public static class WebApplicationExtensions
                 .Database
                 .EnsureCreated();
         }
+
+        return app;
+    }
+
+    // TODO: Use Options pattern
+    private static WebApplication AddHealthCheckMiddleware(
+        this WebApplication app,
+        IConfiguration configuration
+    )
+    {
+        app
+            .MapHealthChecks(
+                configuration
+                    .GetValue<string>(
+                        $"{HealthCheckOptions.HealthCheck}:{nameof(HealthCheckOptions.Endpoint)}"
+                    )!
+            );
 
         return app;
     }
