@@ -32,6 +32,7 @@ param disableLocalAuth bool
 param appConfigurationStoreSku string
 param appConfigurationEnablePurgeProtection bool
 param appConfigurationKeyValues AppConfigurationKeyValue[] = []
+param appConfigurationRoleAssignments RoleAssignment[] = []
 
 // MARK: Variables
 var resourceGroupName = 'rg-${projectName}-${environment}-${locationShortName}'
@@ -84,5 +85,6 @@ module appConfigurationStore 'modules/appConfigurationStore.bicep' = {
         }
       ]
     )
+    roleAssignments: appConfigurationRoleAssignments
   }
 }

@@ -2,7 +2,7 @@
 targetScope = 'resourceGroup'
 
 // MARK: Imports
-import { AppConfigurationKeyValue } from '../types.bicep'
+import { AppConfigurationKeyValue, RoleAssignment } from '../types.bicep'
 
 // MARK: Parameters
 
@@ -22,6 +22,7 @@ param appConfigurationStoreSku string
 param enablePurgeProtection bool
 param disableLocalAuth bool
 param appConfigurationKeyValues AppConfigurationKeyValue[]
+param roleAssignments RoleAssignment[]
 
 // MARK: Variables
 var appConfigurationStoreName = 'appcs-${projectName}-${environment}-${locationShortName}'
@@ -41,5 +42,6 @@ module appConfigurationStore 'br/public:avm/res/app-configuration/configuration-
         contentType: keyValue.contentType
       }
     ]
+    roleAssignments: roleAssignments
   }
 }
