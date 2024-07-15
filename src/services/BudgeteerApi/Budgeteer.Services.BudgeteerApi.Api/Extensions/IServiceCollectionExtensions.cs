@@ -2,7 +2,6 @@
 using Budgeteer.Services.BudgeteerApi.Persistence;
 using Budgeteer.Services.BudgeteerApi.Services;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 
 namespace Budgeteer.Services.BudgeteerApi.Api.Extensions;
 
@@ -25,7 +24,21 @@ public static class IServiceCollectionExtensions
             );
 
         services
+            .AddHealthCheckServices();
+
+        services
             .AddSwaggerServices();
+
+        return services;
+    }
+
+    private static IServiceCollection AddHealthCheckServices(
+        this IServiceCollection services
+    )
+    {
+        services
+            .AddHealthChecks()
+            .AddDbContextCheck<BudgeteerDbContext>();
 
         return services;
     }
