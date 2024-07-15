@@ -7,11 +7,6 @@ param location = 'westeurope'
 param locationShortName = 'weu'
 param deploymentId = take(guid(projectName, environment, locationShortName), 8)
 
-// MARK: Configuration Store Parameters
-param appConfigurationStoreSku = 'Free'
-param appConfigurationEnablePurgeProtection = false
-param disableLocalAuth = false
-
 // MARK: Key Vault Parameters
 param keyVaultEnablePurgeProtection = false
 param enableSoftDelete = false
@@ -32,5 +27,17 @@ param keyVaultSecrets = [
   {
     name: 'ConnectionStrings--Database'
     value: ''
+  }
+]
+
+// MARK: Configuration Store Parameters
+param appConfigurationStoreSku = 'Free'
+param appConfigurationEnablePurgeProtection = false
+param disableLocalAuth = false
+param appConfigurationRoleAssignments = [
+  {
+    principalId: '634823ed-49f0-45e0-af7f-2428d7323994' // Budgeteer.Services.BudgeteerApi.Api.Dev
+    principalType: 'ServicePrincipal'
+    roleDefinitionIdOrName: '516239f1-63e1-4d78-a4de-a74fb236a071' // App Configuration Data Reader
   }
 ]
