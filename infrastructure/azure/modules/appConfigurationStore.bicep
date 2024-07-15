@@ -5,6 +5,8 @@ targetScope = 'resourceGroup'
 import { AppConfigurationKeyValue } from '../types.bicep'
 
 // MARK: Parameters
+
+// MARK: General Parameters
 param projectName string
 param environment string
 param location string
@@ -18,6 +20,7 @@ param deploymentId string
 ])
 param appConfigurationStoreSku string
 param enablePurgeProtection bool
+param disableLocalAuth bool
 param appConfigurationKeyValues AppConfigurationKeyValue[]
 
 // MARK: Variables
@@ -31,6 +34,7 @@ module appConfigurationStore 'br/public:avm/res/app-configuration/configuration-
     location: location
     sku: appConfigurationStoreSku
     enablePurgeProtection: enablePurgeProtection
+    disableLocalAuth: disableLocalAuth
     keyValues: [for keyValue in appConfigurationKeyValues: {
         name: '${keyValue.name}$${keyValue.label}'
         value: keyValue.value
