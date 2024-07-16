@@ -1,6 +1,5 @@
 ﻿using Budgeteer.Services.BudgeteerApi.Infrastructure.Options;
 using Budgeteer.Services.BudgeteerApi.Persistence;
-using Microsoft.EntityFrameworkCore;
 
 namespace Budgeteer.Services.BudgeteerApi.Api.Extensions;
 
@@ -11,7 +10,9 @@ public static class WebApplicationExtensions
         IConfiguration configuration
     )
     {
-        if (app.Environment.IsDevelopment())
+        if (app.Environment.IsLocal()
+            || app.Environment.IsDevelopment()    
+        )
             app
                 .AddDevelopmentMiddleware();
 

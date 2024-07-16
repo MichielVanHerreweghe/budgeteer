@@ -5,6 +5,10 @@ WebApplicationBuilder builder = WebApplication
         args
     );
 
+if (!builder.Environment.IsLocal())
+    builder
+        .AddHostConfigurations();
+
 builder
     .Services
     .AddApplicationServices(
