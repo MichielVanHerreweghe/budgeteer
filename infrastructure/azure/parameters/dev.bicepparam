@@ -26,7 +26,7 @@ param keyVaultRoleAssignments = [
 param keyVaultSecrets = [
   {
     name: 'ConnectionStrings--Database'
-    value: ''
+    value: '' // TODO: Tokenization replacement
   }
 ]
 
@@ -38,6 +38,11 @@ param appConfigurationRoleAssignments = [
   {
     principalId: '634823ed-49f0-45e0-af7f-2428d7323994' // Budgeteer.Services.BudgeteerApi.Api.Dev
     principalType: 'ServicePrincipal'
+    roleDefinitionIdOrName: '516239f1-63e1-4d78-a4de-a74fb236a071' // App Configuration Data Reader
+  }
+  {
+    principalId: '5ea8f1a8-a5da-4261-b149-185f10ee6cba' // Budgeteer.Development
+    principalType: 'Group'
     roleDefinitionIdOrName: '516239f1-63e1-4d78-a4de-a74fb236a071' // App Configuration Data Reader
   }
 ]
